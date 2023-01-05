@@ -32,7 +32,7 @@ export const NavBar = () => {
     <Navbar bg="light" expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" className="b" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggle-icon"></span>
@@ -70,13 +70,13 @@ export const NavBar = () => {
 
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/feed/">
+              <a href="https://www.linkedin.com/in/m-naufal-badruttamam-526635217/">
                 <img src={navIcon1} alt="" />
               </a>
-              <a href="#">
+              <a href="https://web.facebook.com/cakno.comel/">
                 <img src={navIcon2} alt="" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/caknoo_00/">
                 <img src={navIcon3} alt="" />
               </a>
             </div>
