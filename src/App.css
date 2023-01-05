@@ -714,3 +714,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.image-to-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
