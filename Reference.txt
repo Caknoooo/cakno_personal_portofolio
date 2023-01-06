@@ -2,3 +2,10 @@ https://www.npmjs.com/package/react-multi-carousel
 
 https://react-bootstrap.github.io/getting-started/introduction/
 
+https://animate.style/
+
+https://www.npmjs.com/package/react-mailchimp-subscribe
+
+https://www.npmjs.com/package/react-on-screen
+
+https://www.npmjs.com/package/react-router-hash-link
