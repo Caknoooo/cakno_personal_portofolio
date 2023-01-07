@@ -34,20 +34,17 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Delectus, incidunt eius? Iure porro excepturi quam dolores
-                aperiam deleniti voluptatum pariatur aspernatur, molestiae sequi
-                obcaecati nisi. Fugit, distinctio. Officia perspiciatis quod
-                molestiae asperiores ab ducimus voluptatem earum impedit, unde
-                repellendus in sit eius blanditiis quibusdam harum doloremque.
-                Quod, est inventore ab cum molestias, nam autem soluta odio hic
-                pariatur officiis esse optio repellendus! Laudantium unde nemo
-                quos ratione, aspernatur nam! Beatae eligendi necessitatibus
-                alias maxime provident veritatis adipisci nemo culpa nulla
-                reprehenderit itaque incidunt consectetur minima animi molestias
-                pariatur, quam perferendis quibusdam quidem dolorem quos? Beatae
-                exercitationem fugit error sint voluptate.
+              <p className="text-center">
+                I have interest in Software Engineering, Artificial Intelligence
+                and Web Developer. Currently, I'm studying Backend
+                Developer and Machine Learning. I'm also learning programming
+                languages such as C/C++, Java, Python, Javascript, CSS, and PHP.
+                I'm also studying frameworks like Laravel, Bootstrap 5, Tailwind
+                CSS and also a framework for React JS, namely Next Js which I
+                will learn. For Libraries, I'm currently studying React JS, Vue
+                JS, Node JS for the Web Developer realm. For Artificial
+                intelligence I'm studying Python Libraries like Pandas,
+                Matplotlib, OpenCV, Seaborn, Scikitpy, etc.
               </p>
               <Carousel
                 responsive={responsive}
