@@ -8,14 +8,15 @@ import TrackVisibility from "react-on-screen";
 import { isVisible } from "@testing-library/user-event/dist/utils";
 import { useState, useEffect } from "react";
 import 'animate.css';
+import { HashLink } from "react-router-hash-link";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Software Engineer",
+    "Software Engineering",
     "Web Developer",
-    "Artificial Intelligence",
   ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
@@ -60,62 +61,62 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="align-items-center ">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible
-                      ? "animate__animated animate__fadeIn"
-                      : ""
-                  }
-                >
-                  <span className="tagline">Welcome to My Portofolio</span>
-                  <h1>
-                    {`Hi, I'm Caknoo`}
-                    <span className="wrap"> {text}</span>
-                  </h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates qui fugiat assumenda illum deleniti veniam beatae
-                    deserunt magnam, unde, voluptatum corrupti provident.
-                    Necessitatibus officiis suscipit magni consectetur et
-                    dolorum quaerat! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Voluptates qui fugiat assumenda illum
-                    deleniti veniam beatae deserunt magnam, unde, voluptatum
-                    corrupti provident. Necessitatibus officiis suscipit magni
-                    consectetur et dolorum quaerat! Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Mollitia eligendi cum libero
-                    illo nostrum aut debitis, ratione possimus natus, a dolorem
-                    sed quidem ullam minima quibusdam vero officiis facilis
-                    amet.
-                  </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's Connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
+    <Router>
+      <section className="banner" id="home">
+        <Container>
+          <Row className="align-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
+                  >
+                    <span className="tagline">Welcome to My Portofolio</span>
+                    <h1>
+                      {`Hi, I'm M Naufal Badruttamam, I'm a`}{" "}
+                      <span className="wrap"> {text} </span>
+                    </h1>
+                    <p>
+                      
+                      Hello, my Name is M Naufal Badruttamam, I'm from Surabaya,
+                      Indonesia. I studied programming in early September 2021,
+                      I am a junior in programming, specifically in the field of
+                      Software Engineering and Backend Developer. I also have an
+                      interest in the realm of Artificial Intelligence
+                      <br /> <br />
+                      “Stay away from those people who try to disparage your
+                      ambitions. Small minds will always do that, but great
+                      minds will give you a feeling that you can become great
+                      too.” — Mark Twain
+                    </p>
+                    <HashLink to="#connect" style={{ textDecoration: "none" }}>
+                      <button onClick={() => console.log("connect")}>
+                        Let's Connect <ArrowRightCircle size={25} />
+                      </button>
+                    </HashLink>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
 
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={hero} alt="Header Img" />
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <img src={hero} alt="Header Img" />
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Router>
   );
 };
