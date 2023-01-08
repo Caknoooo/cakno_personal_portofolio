@@ -10,7 +10,6 @@ import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
 import colorSharp from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export const Projects = () => {
   const projects = [
