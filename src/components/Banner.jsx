@@ -15,6 +15,7 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
+    "M Naufal Badruttamam",
     "Software Engineering",
     "Web Developer",
   ];
@@ -73,13 +74,12 @@ export const Banner = () => {
                       isVisible ? "animate__animated animate__fadeIn" : ""
                     }
                   >
-                    <span className="tagline">Welcome to My Portofolio</span>
+                    <span className="tagline">Welcome To My Portfolio 👋</span>
                     <h1>
-                      {`Hi, I'm M Naufal Badruttamam, I'm a`}{" "}
+                      {`Hello, I'm`}{" "}
                       <span className="wrap"> {text} </span>
                     </h1>
                     <p>
-                      
                       Hello, my Name is M Naufal Badruttamam, I'm from Surabaya,
                       Indonesia. I studied programming in early September 2021,
                       I am a junior in programming, specifically in the field of
